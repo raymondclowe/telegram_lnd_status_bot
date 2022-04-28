@@ -10,6 +10,7 @@ def lncli_command(command):
     result, error, errorlevel = runcmd(getinfo)
 
     if error:
+        print(error)
         return None
     else:
         try:
@@ -35,4 +36,5 @@ if __name__ == '__main__':
         print(result)
     else:
         print("no result")
+        print()
 
