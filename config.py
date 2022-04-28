@@ -21,4 +21,5 @@ else:
     if os.path.isdir(os.path.expanduser("~/.lnd")):
         lncli_commandLine = "lncli "
     else:
-        lncli_commandLine = "sudo lncli --tlscertpath /home/bitcoin/.lnd/tls.cert --macaroonpath /home/bitcoin/.lnd/data/chain/bitcoin/mainnet/admin.macaroon")
+        lncli_commandLine = "/usr/local/bin/lncli --tlscertpath tls.cert --macaroonpath readonly.macaroon"
+
