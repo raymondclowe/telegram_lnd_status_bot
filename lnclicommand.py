@@ -7,6 +7,9 @@ from config import lncli_commandLine
 
 def lncli_command(command):
     getinfo = lncli_commandLine + " getinfo"
+
+    # print(getinfo)
+
     result, error, errorlevel = runcmd(getinfo)
 
     if error:
@@ -28,7 +31,7 @@ if __name__ == '__main__':
         cmdstring = sys.argv[1]
     else:    # if not, use a default command
         cmdstring = 'getinfo'
-    print(f"executing {cmdstring}")
+    # print(f"executing {cmdstring}")
 
     result = lncli_command(cmdstring)
 
